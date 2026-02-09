@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page One</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-image: url("https://images.squarespace-cdn.com/content/v1/55c8cee9e4b09cb562ce184f/e9cbd669-830c-4ce6-996e-d796c8788795/Weeks+-+Jerusalem.jpg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .main-image {
+      width: 400px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .corner-image {
+      position: absolute;
+      top: -20px;
+      right: -200px;
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .corner-image:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="jesus2.png" alt="Jesus" class="main-image">
+
+    <img src="bubble2.png" alt="Go to Page 2" class="corner-image">
+  </div>
+
+</body>
+</html>
+
+
